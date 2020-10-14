@@ -1,0 +1,1 @@
+/Volumes/Digio/root/.oh-my-zsh/custom/variables.zsh

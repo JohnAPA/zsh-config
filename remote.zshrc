@@ -1,0 +1,1 @@
+/Volumes/Digio/root/.zshrc

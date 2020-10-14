@@ -1,0 +1,1 @@
+/Users/cnode/.oh-my-zsh/custom/alias.zsh

@@ -2,8 +2,12 @@
 # Custom Alias File
 # ====================
 
-# Connections
-# ----------------
+alias rst.dock="killall Dock"
+
+
+
+
+# =========================[ Connections ]=========================
 alias emailBox="ssh root@157.230.182.143"
 alias connex='ssh jrapa86@107.180.93.44'
 alias edelivr='ssh edelivr@107.180.93.44'
@@ -11,13 +15,10 @@ alias pi='ssh pi@192.168.1.233'
 alias digio="ssh -R 52698:localhost:52698 root@67.205.189.39"
 alias digio.nosub="ssh root@67.205.189.39"
 
-# Addresses
-# ---------------
+# =========================[ Addresses ]=========================
 alias ip.pvt="ipconfig getifaddr en0"
 alias ip.pub="curl icanhazip.com"
 alias ip="$(ip.pvt) --> $(ip.pub)"
-
-
 
 alias ip.digio="echo 67.205.189.39"
 alias ip.connex="echo 107.180.93.44"
@@ -32,8 +33,7 @@ alias ip.emailBox="echo 157.230.182.143"
    alias email.ip="ip.emailBox"
    alias ip.email="ip.emailBox"
 
-# Address-Copy
-#---------------
+# =========================[ Address-Copy ]=========================
 alias ip.pvt.copy="echo $(ip.pvt) | pbcopy"
 alias ip.pub.copy="echo $(ip.pub) | pbcopy"
 alias ip.digio.copy="echo $(ip.digio) | pbcopy"
@@ -50,10 +50,10 @@ alias ip.emailBox.copy="echo $(ip.emailBox) | pbcopy"
    alias ip.email.c="echo $(ip.emailBox) | pbcopy"
 
 
-# Edit
-# ----------------
+# =========================[ Edit ]=========================
+alias sub="subl"
 alias edit="subl ~/.oh-my-zsh/custom/functions.zsh && subl ~/.zshrc && subl ~/.oh-my-zsh/custom/alias.zsh"
-
+alias edit.p10k="sub ~/.p10k.zsh."
 alias edit.nvim="nvim ~/.zshrc"
 alias edit.alias.nvim="nvim ~/.oh-my-zsh/custom/alias.zsh"
 alias edit.func.nvim="nvim ~/.oh-my-zsh/custom/functions.zsh"
@@ -66,19 +66,15 @@ alias ln-s="ln -s $1"
 
 alias link="ls -a $pbpaste $1"
 
-# Cheatsheet
-# ------------------
+# =========================[ Cheatsheet ]=========================
 alias cheat="vim ~/cube/cmdDoc/cheatsheet.txt"
 alias cheatsheet="subl ~/cube/cmdDoc/cheatsheet.txt"
 
-# Applications
-# -------------------
-alias typora="open -a typora"
+# =========================[ Applications ]=========================
 
 
 
-# Quick-Commands
-# ---------------
+# =========================[ Quick-Commands ]=========================
    #  NPM Commands
    # ----------------
    alias npmr='npm run'
@@ -92,30 +88,20 @@ alias typora="open -a typora"
 
 
 
-#  Go-To Commands
-# ----------------
+# =========================[ Go-To Commands ]=========================
 alias goto-hexo='cd /Users/cnode/cube/jsEnv/hexo/blog'
 
 
-#  Go Commands
-# ----------------
+# =========================[ Go Commands ]=========================
 alias go-hexo='goto-hexo'
 
-#  Custom Function Shortcuts
-# --------------------------
+# =========================[ Custom Function Shortcuts ]=========================
 alias appid="appID"
 alias esp='cd /Users/cnode/esp8266/projects'
 
 
-# Files
-# ---------
-# network.info.zsh 
-# jekyll.zsh
-# nginx.zsh
-# 
 
-#  New
-# --------------------------
+# ==================[ New ]=========================
 alias about="hostnamectl"
 
 
